@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Heric Willian</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Desenvolvedor Full Stack</h1>
+        <p>Python | JavaScript | PHP | HTML | CSS | Git | GitHub</p>
+    </header>
+
+    <main>
+
+        <section class="card section" id="about">
+            <img src="imagens/about.webp" alt="Sobre Mim">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor full stack apaixonado por tecnologia e inovação. Possuo experiência em automação de tarefas e testes de aplicações web utilizando Python, além de domínio em tecnologias como JavaScript, PHP, HTML, CSS, Git e GitHub.</p>
+        </section>
+
+        <section class="card section" id="skills">
+            <img src="imagens/skills.webp" alt="Habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+               <p>Desenvolvimento de sites</p> 
+               <p>Automações para testes</p>
+               <p>Automações de tarefas Web</p>
+               <p>Forks, pull request e code reviews</p>
+               <p>Gerenciamento de issues e projetos no GitHub</p>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos Interativa -->
+        <section class="card section" id="projects">
+            <img src="imagens/projects.webp" alt="Projetos">
+            <h2>Projetos</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- texto apeenas até concluir um projeto -->
+                    <P id="paragrafo">Em breve, mais projetos!</P>
+                    <!-- <div class="swiper-slide"><img src="imagens/projeto1.webp" alt="Projeto 1"></div>
+                    <div class="swiper-slide"><img src="imagens/projeto2.webp" alt="Projeto 2"></div>
+                    <div class="swiper-slide"><img src="imagens/projeto3.webp" alt="Projeto 3"></div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Seção Tech Stack -->
+        <section class="card section" id="tech-stack">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <img src="imagens/python.webp" alt="Python">
+                <img src="imagens/javascript.webp" alt="JavaScript">
+                <img src="imagens/html.webp" alt="HTML">
+                <img src="imagens/css.webp" alt="CSS">
+                <img src="imagens/php.webp" alt="PHP">
+                <img src="imagens/git.webp" alt="Git">
+                <img src="imagens/github.webp" alt="GitHub">
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="card section" id="contact">
+            <h2>Contato</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Entre em contato: <a href="mailto:hericwillianpatrick@gmail.com">hericwillianpatrick@gmail.com</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Reveal Animations
+        ScrollReveal().reveal('.section', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        // Swiper.js para a seção de pr

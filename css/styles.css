@@ -1,0 +1,201 @@
+/* Configuração geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #121212;
+    padding: 20px;
+    border-bottom: 3px solid #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+h1 {
+    color: #00ffff;
+    font-size: 2.2em;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Animação de brilho */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+}
+
+/* Cartões */
+.card {
+    background-color: #131313;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    text-shadow: 0 0 5px #00ffff;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagens dentro dos cartões */
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Seção de habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.skills p {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.skills p:hover {
+    background: rgba(0, 255, 255, 0.5);
+}
+
+/* Seção Tech Stack */
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tech-stack img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-stack img:hover {
+    transform: scale(1.2);
+}
+
+/* Swiper - Carrossel de Projetos */
+.swiper-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    background: #00ffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a0a0a;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #008080;
+}
+
+/* Rodapé */
+footer {
+    background-color: #121212;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 3px solid #00ffff;
+}
+
+footer a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 15px #00ffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-stack img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Texto em projetos, apenas até ter um projeto */
+#paragrafo {
+    text-indent: 270px;
+}
