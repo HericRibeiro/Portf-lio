@@ -64,8 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Configuração das partículas no fundo
     tsParticles.load("particles-js", {
         particles: {
-            number: { value: 80 }, // Aumenta o número de partículas
-            density: { enable: true, value_area: 800 },
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
             size: { value: 3 },
             move: { enable: true, speed: 1 },
             color: { value: "#ffffff" },
@@ -89,4 +90,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
