@@ -9,22 +9,28 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+        <!-- Parcticulas -->
+        <div id="particles-js"></div>
 
+        <!-- Cabecalho -->
     <header>
-        <h1>Desenvolvedor Full Stack</h1>
+        <h1>Heric Willian</h1>
         <p>Python | JavaScript | PHP | HTML | CSS | Git | GitHub</p>
     </header>
 
     <main>
-
+        <!-- Primeiro card -->
         <section class="card section" id="about">
-            <img src="imagens/about.webp" alt="Sobre Mim">
+            <img src="imagens/EU.jpg" alt="Sobre Mim">
             <h2>Sobre Mim</h2>
             <p>Sou um desenvolvedor full stack apaixonado por tecnologia e inovação. Possuo experiência em automação de tarefas e testes de aplicações web utilizando Python, além de domínio em tecnologias como JavaScript, PHP, HTML, CSS, Git e GitHub.</p>
+            <a href="Sobre mim.html">Sobre Mim</a>
         </section>
 
+        <!-- Segundo card -->
         <section class="card section" id="skills">
             <img src="imagens/skills.webp" alt="Habilidades">
             <h2>Habilidades</h2>
@@ -39,8 +45,8 @@
 
         <!-- Seção de Projetos Interativa -->
         <section class="card section" id="projects">
-            <img src="imagens/projects.webp" alt="Projetos">
             <h2>Projetos</h2>
+            <img src="imagens/Captura de tela_21-2-2025_212420_.jpeg" alt="Projetos">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <!-- texto apeenas até concluir um projeto -->
@@ -83,16 +89,3 @@
     <footer>
         <p>Entre em contato: <a href="mailto:hericwillianpatrick@gmail.com">hericwillianpatrick@gmail.com</a></p>
     </footer>
-
-    <!-- Scripts -->
-    <script>
-        // Scroll Reveal Animations
-        ScrollReveal().reveal('.section', {
-            duration: 1000,
-            origin: 'bottom',
-            distance: '50px',
-            easing: 'ease-in-out',
-            reset: true
-        });
-
-        // Swiper.js para a seção de pr

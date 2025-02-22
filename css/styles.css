@@ -53,7 +53,7 @@ h1 {
 /* Imagens dentro dos cartões */
 .card img {
     width: 100%;
-    max-height: 200px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -198,4 +198,38 @@ footer a:hover {
 /* Texto em projetos, apenas até ter um projeto */
 #paragrafo {
     text-indent: 270px;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #0a0a0a; /* Mantém o fundo escuro */
+}
+
+#logo {
+    width: 10px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover; /* Evita distorções */
+    position: absolute;
+    top: -170px;
+    left: 20px;
+    transform: scale(0.3);
+}
+
+a {
+    color: white;
+}
+
+#projeto1 {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
 }
